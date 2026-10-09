@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>spikeball.com.au</title>
+<meta name="description" content="You were expecting more. So was I.">
+<meta property="og:title" content="Australia's #1 Spikeball community.">
+<meta property="og:description" content="You were expecting more. So was I.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='%23FFD60A'/></svg>">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #000000;
+    --muted: #6b6b6b;
+    --ball: #FFD60A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000000; --ink: #ffffff; --muted: #8a8a8a; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: env(safe-area-inset-top, 0px) 24px env(safe-area-inset-bottom, 0px);
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: 100%; max-width: 720px; }
+  h1 {
+    margin: 0;
+    font-size: clamp(2.25rem, 8vw, 4.25rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.02;
+    overflow-wrap: anywhere;
+  }
+  p {
+    margin: 20px 0 36px;
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  a.join {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    background: var(--ball);
+    color: #000;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    border-radius: 999px;
+    transition: transform .15s ease;
+  }
+  a.join:hover { transform: translateY(-2px); }
+  a.join:active { transform: translateY(0) scale(.98); }
+  a.join:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #000; }
+  footer {
+    position: fixed;
+    left: 0; right: 0;
+    bottom: 0;
+    padding: 0 24px calc(24px + env(safe-area-inset-bottom, 0px));
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    a.join { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Australia's #1 Spikeball community.</h1>
+    <p>You were expecting more. So was I.</p>
+    <a class="join" href="https://chat.whatsapp.com/D4sZf7dKR5cLYypriSCp1W?mode=gi_t" rel="noopener">
+      <span class="dot" aria-hidden="true"></span>Join the group
+    </a>
+  </main>
+  <footer>For the love of the greatest game in the world.</footer>
+</body>
+</html>
